@@ -69,8 +69,8 @@
 
 .edit_delete_buttons {
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .edit_button {
@@ -80,6 +80,22 @@
     border-radius: 8px;
     border:0;
 }
+
 .delete_button {
     background-color: crimson;
+}
+
+.update_user_form_container {
+    background-color: #bfc1bff4;
+    padding: 20px 80px;
+    border-radius: 12px;
+}
+
+.user_update_form_title{ 
+    color: #070294;
+    text-transform: uppercase;
+    align-self: center;
+    font-family: sans-serif;
+    letter-spacing: 6px;
+    font-weight: 700    ;
 }

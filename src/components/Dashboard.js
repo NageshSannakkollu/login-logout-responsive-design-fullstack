@@ -16,7 +16,7 @@ const Dashboard = () => {
     const[deleteSpecificUser,setDeleteUser] = useState(true)
     const navigate = useNavigate()
     const jwtToken = Cookies.get("jwtToken");
-    console.log("jwtToken:",jwtToken)
+    // console.log("jwtToken:",jwtToken)
     useEffect(()=> {
         if(jwtToken === undefined){
         navigate("/login")
@@ -49,7 +49,7 @@ const Dashboard = () => {
       }
   }
 
-    console.log("usersList:",usersList)
+    // console.log("usersList:",usersList)
   return (
     <div>
         <Header/>
