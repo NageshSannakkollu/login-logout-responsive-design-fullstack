@@ -133,6 +133,13 @@
     background-color: #df0a0ae5;
 }
 
+.login_credentials {
+    text-align: center;
+    color: #454444;
+    font-weight: 300;
+    font-size: 12px;
+}
+
 @media screen and (max-width:767px){
     .login_page_left_image {
         display: none;

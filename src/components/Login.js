@@ -93,6 +93,10 @@ const LoginPage = () => {
               </form>
                <p className="login_signup_disclaimer">Not registered yet? click here to <Link to="/signup">Signup...</Link></p>
             </div>
+            <div className="login_credentials">
+              <p>LoginCredentials:sample@sample.com</p>
+              <p>LoginCredentials:sample</p>
+            </div>
           </div>
           </div>
         </div>
