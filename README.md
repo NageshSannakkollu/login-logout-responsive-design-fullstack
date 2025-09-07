@@ -1,4 +1,4 @@
-# 🔐 Simple Authentication System (Fullstack)
+# 🔐 Login & Logout Flow in React.js & Node.js (Fullstack)
 
 A simple authentication system built with **React (frontend)** and **Node.js + Express + SQLite (backend)**.  
 This project demonstrates how to implement **user authentication** with registration, login, session management, logout, and protected routes.
@@ -58,6 +58,7 @@ This project demonstrates how to implement **user authentication** with registra
 - **jsonwebtoken** – Token-based handling
 - **dotenv** – Environment variables
 - **CORS** – Cross-origin support
+- **Users.db** – Users Database 'Crated at registration time'
 
 ---
 
