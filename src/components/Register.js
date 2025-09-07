@@ -31,19 +31,19 @@ const RegisterPage = () => {
 }
 
   return (
-    <div className="login_page_main_container">
     <div className="login_page_inside_container">
       <div className="login_page_left_image">
-        <div className="login_right_header_para_container">
-          <h1>Advanced Dental Imaging Platform</h1>
-          <p>Secure, efficient dental scan management for healthcare professionals.</p>
+        <div className="login_right_header_para_container registration_container">
+          <h1>Need more information?connect with us right now</h1>
+          <p>Klickks connects you with the best photographers for all your photoshoots.We’ll help you find the perfect match</p>
         </div>
       </div>
       {/* Login Form */}
       <div className="login_page_form_container">
+      <div className="login_page_form_inside_container">
           <div className="login_form_logo_heading_para_container">
-              <h1 className="login_page_klickks_title">User Registration</h1>
-              <h2 className="welcome_back_title">Welcome Back</h2>
+             <img src="https://res.cloudinary.com/dksgsqhdk/image/upload/v1757170754/klickks_logo1_cfgpm7.png" alt="logo" className="login_logo_image" />
+              <h2 className="welcome_back_title">User Register</h2>
               <p className="sign_in_paragraph">Signup in to Klickks to access digital platform</p>
             </div>
             <div className="login_form_logo_heading_para_container">
@@ -96,10 +96,7 @@ const RegisterPage = () => {
                 </div>
                 <button
                   type="submit"
-                  variant="medical"
-                  className="sign_in_button"
-                  size="lg"
-                  disabled={isLoading}
+                  className="sign_in_button signup_button"
                 >
                   Sign up
                 </button>

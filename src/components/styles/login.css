@@ -1,7 +1,7 @@
-.login_page_main_container {
+/* .login_page_main_container {
     border-radius: 20px;
     height: 100vh;
-}
+} */
 
 .login_page_inside_container{
     display: flex;
@@ -16,18 +16,21 @@
     background-image: url("https://res.cloudinary.com/dksgsqhdk/image/upload/v1757178365/login_image_klickks_ti6szc.png");
     background-repeat: no-repeat;
     width: 40%;
-    color: #fff;
     padding: 0px 50px;
     background-size: cover;
 }
+
+.registration_container {
+}
 .login_right_header_para_container {
-    margin-top: 300px;
+    margin-top: 200px;
     
 }
 .login_right_header_para_container h1{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    letter-spacing: 1px;
-    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 2px;
+    font-size: 25px;
+    text-transform: uppercase;
 }
 .login_right_header_para_container p{
     font-weight: 400;
@@ -35,6 +38,7 @@
     text-transform: uppercase;
     font-size: 9px;
     text-align: center;
+    color: #f1f1f1;
 }
 
 .login_page_form_container {
@@ -52,14 +56,20 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-self: center;
-     border: 1px solid red;
+    align-self: flex-start;
+}
+
+.login_page_form_inside_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 
 .login_input_form {
-    width: 350px;
-    padding: 8px 10px;
+    width: 400px;
+    padding: 12px 20px;
     border-radius: 8px;
     cursor: pointer;
     outline: none;
@@ -72,10 +82,14 @@
 .login_page_klickks_title {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 700;
-    letter-spacing: 5px;
-    font-size: 40px;
+    letter-spacing: 10px;
+    font-size: 50px;
 }
 
+.login_logo_image {
+    width: 350px;
+    height: 100px;
+}
 
 .sign_in_button {
     width: 100%;
@@ -97,20 +111,26 @@
 }
 
 .welcome_back_title {
-    letter-spacing: 4px;
+    letter-spacing: 3px;
     text-transform: uppercase;
     margin-bottom: 0px;
     padding-bottom: 0px;
+    font-size: 32px;
 }
 .sign_in_paragraph {
-    font-weight: 400;
+    font-weight: 300;
     margin-top: 0px;
     padding-top: 0px;
+    text-transform: uppercase;
+    font-size: 12px;
 }
 
 .login_signup_disclaimer {
     text-align: center;
     font-size: 12px;
+}
+.signup_button {
+    background-color: #df0a0ae5;
 }
 
 @media screen and (max-width:767px){

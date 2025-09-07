@@ -32,20 +32,20 @@ const LoginPage = () => {
 }
 
   return (
-    <div className="login_page_main_container">
     <div className="login_page_inside_container">
       <div className="login_page_left_image">
         <div className="login_right_header_para_container">
-          <h1>Advanced Dental Imaging Platform</h1>
-          <p>Secure, efficient dental scan management for healthcare professionals.</p>
+          <h1>Need more information?connect with us right now</h1>
+          <p>Klickks connects you with the best photographers for all your photoshoots.We’ll help you find the perfect match</p>
         </div>
       </div>
       {/* Login Form */}
       <div className="login_page_form_container">
+      <div className="login_page_form_inside_container">
           <div className="login_form_logo_heading_para_container">
-              <h1 className="login_page_klickks_title">Klickks</h1>
+              <img src="https://res.cloudinary.com/dksgsqhdk/image/upload/v1757170754/klickks_logo1_cfgpm7.png" alt="logo" className="login_logo_image" />
               <h2 className="welcome_back_title">Welcome Back</h2>
-              <p className="sign_in_paragraph">Sign in to access the dental imaging platform</p>
+              <p className="sign_in_paragraph">Sign in to Klickks to access digital platform</p>
             </div>
             <div className="login_form_logo_heading_para_container">
               <form onSubmit={handleSubmit} className="space-y-6">
@@ -94,9 +94,9 @@ const LoginPage = () => {
                <p className="login_signup_disclaimer">Not registered yet? click here to <Link to="/signup">Signup...</Link></p>
             </div>
           </div>
+          </div>
         </div>
-      </div>
-  )
+    )
 }
 
 export default LoginPage

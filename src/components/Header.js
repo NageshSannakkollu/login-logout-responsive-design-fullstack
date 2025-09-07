@@ -9,7 +9,7 @@ const Header = () => {
     const navigate = useNavigate()
     const clickOnLogout = () => {
         Cookies.remove("jwtToken")
-        navigate("/")
+        navigate("/login")
     }
   return (
     <nav className='nav_container'>
