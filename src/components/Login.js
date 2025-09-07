@@ -94,8 +94,9 @@ const LoginPage = () => {
                <p className="login_signup_disclaimer">Not registered yet? click here to <Link to="/signup">Signup...</Link></p>
             </div>
             <div className="login_credentials">
-              <p>LoginCredentials:sample@sample.com</p>
-              <p>LoginCredentials:sample</p>
+              <p>LoginCredentials</p>
+              <p>email:sample@sample.com</p>
+              <p>password:sample</p>
             </div>
           </div>
           </div>
