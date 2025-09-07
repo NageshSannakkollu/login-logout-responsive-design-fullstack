@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+# 🔐 Login & Logout Flow in React.js & Node.js (Fullstack)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple authentication system built with **React (frontend)** and **Node.js + Express + SQLite (backend)**.  
+This project demonstrates how to implement **user authentication** with registration, login, session management, logout, and protected routes.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Features
 
-### `npm start`
+### Backend
+- **Register (Sign Up):** Create new account with email & password.
+- **Login:** Authenticate with email & password.
+- **Session Management:** Stay logged in using cookies.
+- **Logout:** Clear session & redirect to login.
+- **CRUD Operations:**
+  - `registerUser`
+  - `loginUser`
+  - `getAllUsers`
+  - `getUserById`
+  - `getUserByEmail`
+  - `updateUser`
+  - `deleteUser`
+- **Database:** SQLite (`better-sqlite3`) for persistent storage.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Frontend
+- **Register Page:** Create new user accounts.
+- **Login Page:** User authentication.
+- **Protected Dashboard:** Only accessible when logged in.
+- **Header:** Company logo + Logout button.
+- **Dashboard Features:**
+  - View all registered users.
+  - User card with **username + email**.
+  - **Edit user:** Opens popup with user details for editing.
+  - **Delete user:** Removes user & refreshes user list.
+- **UI Enhancements:**
+  - Toast messages for success/failure actions.
+  - Popup modals for editing users.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🛠️ Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Frontend
+- **React 19**
+- **React Router v7**
+- **Axios** – API requests
+- **js-cookie** – Manage cookies
+- **React Toastify** – Notifications
+- **ReactJS Popup** – Edit user modal
+- **React Icons** – UI icons
 
-### `npm run build`
+### Backend
+- **Node.js + Express**
+- **better-sqlite3** – Database
+- **bcrypt / bcryptjs** – Password hashing
+- **express-session** – Session management
+- **cookie-parser** – Parse cookies
+- **jsonwebtoken** – Token-based handling
+- **dotenv** – Environment variables
+- **CORS** – Cross-origin support
+- **Users.db** – Users Database 'Crated at registration time'
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
