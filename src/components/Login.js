@@ -20,7 +20,7 @@ const LoginPage = () => {
   const handleSubmit = async(event) => {
     event.preventDefault()
     const loginValues = {email:email,password:password}
-    const response = await axios.post("http://localhost:3036/api/auth/login",loginValues)
+    const response = await axios.post("https://login-logout-responsive-design-backend.onrender.com/api/auth/login",loginValues)
     console.log("Response:",response.data)
     if(response.data.success){  
       Cookies.set('jwtToken', response.data.jwtToken)

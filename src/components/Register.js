@@ -10,7 +10,6 @@ const RegisterPage = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [showPassword,setShowPassword] = useState("false")
-  const [isLoading, setIsLoading] = useState(false);
 
   const navigate = useNavigate()
 
@@ -20,7 +19,7 @@ const RegisterPage = () => {
   const handleSubmit = async(event) => {
     event.preventDefault()
     const loginValues = {name:name,email:email,password:password}
-    const response = await axios.post("http://localhost:3036/api/auth/signup",loginValues)
+    const response = await axios.post("https://login-logout-responsive-design-backend.onrender.com/api/auth/signup",loginValues)
     console.log("Response:",response.data)
     if(response.data.success){  
       toast.success(response.data.message)

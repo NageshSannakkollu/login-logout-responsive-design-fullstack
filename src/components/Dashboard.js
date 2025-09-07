@@ -28,7 +28,7 @@ const Dashboard = () => {
             if(deleteSpecificUser){
                 setDeleteUser(false)
             
-            const response = await axios.get("http://localhost:3036/api/users")
+            const response = await axios.get("https://login-logout-responsive-design-backend.onrender.com/api/users")
             const usersData = await response.data.users
             setUsersList(usersData)
         }
@@ -38,7 +38,7 @@ const Dashboard = () => {
 
     const deleteUser = async(id) => {
     // console.log("delete Id:",id)
-    const response = await axios.delete(`http://localhost:3036/api/user/${id}`)
+    const response = await axios.delete(`https://login-logout-responsive-design-backend.onrender.com/api/user/${id}`)
     
       if(response.data.success){
         toast.success("Delete Job Successfully")

@@ -18,7 +18,7 @@ const UserCard = (props) => {
     useEffect(() => {
         const getSpecificUser = async() => {
             try {
-                const response = await axios.get(`http://localhost:3036/api/user/${id}`)
+                const response = await axios.get(`https://login-logout-responsive-design-backend.onrender.com/api/user/${id}`)
                 const data = await response.data.users;
                 // console.log("Data:",data)
                 setUserDetails([data])
@@ -35,15 +35,15 @@ const UserCard = (props) => {
         event.preventDefault()
         const userDetailsInfo = setUserDetails[0]
         console.log("userDetailsInfo:",userDetailsInfo)
-        const response = await axios.put(`http://localhost:3036/api/user/${id}`,userUpdateDetails[0])
+        const response = await axios.put(`https://login-logout-responsive-design-backend.onrender.com/api/user/${id}`,userUpdateDetails[0])
             const data = await response.data;
             console.log("data:",data)
-            // if(data.success){
-            //     toast.success(data.message)
-            //     navigate("/")
-            // }else{
-            //     toast.error(data.message)
-            // }
+            if(data.success){
+                toast.success(data.message)
+                navigate("/")
+            }else{
+                toast.error(data.message)
+            }
     } 
 
   return (
